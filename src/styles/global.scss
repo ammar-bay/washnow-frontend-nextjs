@@ -1,0 +1,59 @@
+html, body, #__next{
+  margin: 0%;
+  height: 100%;
+} 
+
+:root {
+  --blue-03: rgba(153, 223, 255, 1);
+  --blue-06: rgba(0, 139, 204, 1);
+  --blue-08: rgba(0, 105, 153, 1);
+  --grays-00: rgba(250, 250, 250, 1);
+  --grays-01: rgba(242, 242, 242, 1);
+  --grays-02: rgba(219, 219, 219, 1);
+  --grays-03: rgba(179, 179, 179, 1);
+  --grays-04: rgba(102, 102, 102, 1);
+  --grays-05: rgba(47, 47, 47, 1);
+  --grayswhite: rgba(255, 255, 255, 1);
+  --gray-200: rgba(234, 236, 240, 1);
+  --white: rgba(255, 255, 255, 1);
+  --body-bold-font-family: "Inter-Bold", Helvetica;
+  --body-bold-font-size: 16px;
+  --body-bold-font-style: normal;
+  --body-bold-font-weight: 700;
+  --body-bold-letter-spacing: -0.40799999237060547px;
+  --body-bold-line-height: 20px;
+  --body-regular-font-family: "Inter-Regular", Helvetica;
+  --body-regular-font-size: 16px;
+  --body-regular-font-style: normal;
+  --body-regular-font-weight: 400;
+  --body-regular-letter-spacing: -0.40799999237060547px;
+  --body-regular-line-height: 20px;
+  --blue-01: rgba(229, 247, 255, 1);
+  --blue-02: rgba(204, 239, 255, 1);
+  --blue-04: rgba(102, 207, 255, 1);
+  --blue-05: rgba(51, 190, 255, 1);
+  --blue-07: rgba(0, 139, 204, 1);
+  --blue-09: rgba(0, 70, 102, 1);
+  --blue-10: rgba(0, 35, 51, 1);
+  --h2-bold-font-family: "Inter-Bold", Helvetica;
+  --h2-bold-font-size: 20px;
+  --h2-bold-font-style: normal;
+  --h2-bold-font-weight: 700;
+  --h2-bold-letter-spacing: -0.40799999237060547px;
+  --h2-bold-line-height: 24px;
+  --primary-02: rgba(204, 239, 255, 1);
+  --primary-03: rgba(153, 223, 255, 1);
+  --callout-regular-font-family: "Inter-Regular", Helvetica;
+  --callout-regular-font-size: 14px;
+  --callout-regular-font-style: normal;
+  --callout-regular-font-weight: 400;
+  --callout-regular-letter-spacing: -0.3199999928474426px;
+  --callout-regular-line-height: 16px;
+  --primary-06: rgba(0, 139, 204, 1);
+  --text-sm-normal-font-family: "Inter-Regular", Helvetica;
+  --text-sm-normal-font-size: 14px;
+  --text-sm-normal-font-style: normal;
+  --text-sm-normal-font-weight: 400;
+  --text-sm-normal-letter-spacing: 0px;
+  --text-sm-normal-line-height: 20px;
+}

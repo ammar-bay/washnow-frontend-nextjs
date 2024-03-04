@@ -1,0 +1,104 @@
+.container {
+    align-items: center;
+    background-color: var(--blue-06);
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    padding: 80px 10%;
+    position: relative;
+
+    .top {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+
+        .logo {
+            height: 36px;
+            position: relative;
+            width: 221px;
+        }
+
+        .options {
+            align-items: flex-start;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 40px;
+            position: relative;
+
+            .text {
+                color: var(--grayswhite);
+                font-family: "Inter", Helvetica;
+                font-size: 16px;
+                font-weight: 400;
+                letter-spacing: 0;
+                line-height: 20px;
+                margin-top: -1px;
+                position: relative;
+                white-space: nowrap;
+                width: fit-content;
+            }
+        }
+
+    }
+
+    .line {
+        border: 1px solid white;
+        width: 100%;
+    }
+
+
+    .bottom {
+        align-items: center;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+
+
+        .left {
+            align-items: center;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 8px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .mid {
+            display: flex;
+            position: relative;
+            gap: 16px;
+        }
+
+        .right {
+            display: flex;
+            gap: 10px;
+
+            .icon {
+                color: white;
+            }
+        }
+
+        .text {
+            color: var(--grayswhite);
+            font-family: "Inter", Helvetica;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 20px;
+            margin-top: -1px;
+            position: relative;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+    }
+}

@@ -1,0 +1,268 @@
+.container {
+  width: calc(100vw - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 5%;
+
+    .detailerImgContainer {
+      height: 354px;
+      position: relative;
+      width: 426px;
+
+      .detailerBgImg {
+        height: 280px;
+        left: 4px;
+        position: absolute;
+        top: 0;
+        width: 422px;
+      }
+
+      .detailerImg {
+        height: 148px;
+        left: 0;
+        position: absolute;
+        top: 206px;
+        width: 148px;
+      }
+    }
+
+    .detailerNameContainer {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      width: 422px;
+      padding: 10% 0;
+
+      .detailerName {
+        color: #2e2e2e;
+        font-family: "Inter", Helvetica;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: -0.41px;
+        line-height: 24px;
+        margin-top: -1px;
+        position: relative;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .detailerPrice {
+        color: #2e2e2e;
+        font-family: "Inter", Helvetica;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.41px;
+        line-height: 24px;
+        margin-top: -1px;
+        position: relative;
+        white-space: nowrap;
+        width: fit-content;
+      }
+    }
+
+    .address {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 5% 0;
+      width: 422px;
+
+      .text {
+        color: var(--grays-04);
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.41px;
+        line-height: 20px;
+        margin-top: -1px;
+        position: relative;
+        width: 335px;
+      }
+
+      .p {
+        align-self: stretch;
+        color: var(--grays-04);
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.41px;
+        line-height: 20px;
+        position: relative;
+      }
+    }
+
+    .line {
+      width: 100%;
+      border: 1px solid #F2F2F2;;
+    }
+
+    .mid {
+      align-items: flex-start;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10% 0;
+      .calender {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .timeHeading {
+        color: var(--grays-04);
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.41px;
+        line-height: 20px;
+        margin-top: -1px;
+        position: relative;
+        width: 335px;
+      }
+
+      .timingsContainer {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        width: 422px;
+
+        .row {
+          align-items: flex-start;
+          align-self: stretch;
+          display: flex;
+          flex: 0 0 auto;
+          gap: 8px;
+          position: relative;
+          width: 100%;
+          .column {
+            width: 50%;
+
+            .time {
+              align-items: center;
+              background-color: #f2f2f2;
+              border-radius: 16px;
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+              justify-content: center;
+              padding: 16px 22px;
+              position: relative;
+
+              .text {
+                color: var(--grays-05);
+                font-family: "Inter", Helvetica;
+                font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -0.41px;
+                line-height: 16px;
+                margin-top: -1px;
+                position: relative;
+                text-align: center;
+                white-space: nowrap;
+                width: fit-content;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .bookingBtn {
+      width: 100%;
+      margin-bottom: 10%;
+    }
+
+    .bottom {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      width: 422px;
+      padding-top: 10%;
+
+      .reviewHeading {
+        color: var(--grays-04);
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: -0.41px;
+        line-height: 20px;
+        margin-top: -1px;
+        position: relative;
+        white-space: nowrap;
+        width: fit-content;
+      }
+
+      .reviewsWrapper {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        width: 100%;
+
+        .review {
+          align-items: flex-start;
+          align-self: stretch;
+          display: flex;
+          flex: 0 0 auto;
+          gap: 8px;
+          padding: 8px 0px;
+          position: relative;
+          width: 100%;
+
+          .reviewerImg {
+            background-position: 50% 50%;
+            background-size: cover;
+            border-radius: 122px;
+            height: 40px;
+            position: relative;
+            width: 40px;
+          }
+
+          .reviewDetail {
+            align-items: flex-start;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 8px;
+            position: relative;
+
+            .text {
+              color: var(--grays-04);
+              font-family: "Inter", Helvetica;
+              font-size: 16px;
+              font-weight: 500;
+              letter-spacing: -0.41px;
+              line-height: 20px;
+              margin-top: -1px;
+              position: relative;
+              width: 271px;
+            }
+
+            .ratingsImg {
+              flex: 0 0 auto;
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  }
+}

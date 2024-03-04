@@ -1,0 +1,176 @@
+//TODO: modify placeholder styling
+.underlined {
+  border-radius: 0 !important;
+  border-top-width: 0 !important;
+  border-left-width: 0 !important;
+  border-right-width: 0 !important;
+
+  &:hover {
+    border-bottom-width: 2px !important;
+  }
+
+  &:focus {
+    border-bottom-width: 2px !important;
+  }
+}
+
+@mixin InputField($height: 40px, $width: 100%, $fontSize: 16px, $color: #00000020, $borderWidth: 1.5px) {
+  width: $width;
+  border: $borderWidth solid $color;
+  font-size: $fontSize;
+  font-weight: 400;
+  border-radius: 16px;
+  height: $height;
+}
+
+@mixin textField {
+  @include InputField();
+  padding: 0.5rem;
+
+  &:focus {
+    border: 1.5px solid var(--grays-03);
+    outline: none;
+  }
+
+}
+
+.textField,
+.email,
+.password {
+  @include textField;
+}
+
+.multiLineText {
+  @include InputField(undefined, 100%, 16px);
+  padding: 5px;
+  resize: none;
+  line-height: 1.5;
+}
+
+.multiLineText:focus {
+  border: 1.5px solid var(--grays-01);
+  outline: none;
+}
+
+.checkbox {
+  vertical-align: center;
+  text-align: center;
+  min-width: 25px;
+  line-height: 22px;
+  @include InputField(25px, 25px, undefined, undefined);
+  border: 2px solid var(--grays-01);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.checkbox:active,
+.checkbox:checked:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.checkbox:checked {
+  border: 1px solid #adb8c0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+  color: var(--grays-01);
+  border: 2px solid var(--grays-01);
+  padding-left: 2px;
+  background-color: var(--grays-01);
+}
+
+.checkbox:checked:after {
+  content: '\2713';
+  font-size: 17px;
+  color: white;
+  margin: 0px 2px 0px 0px;
+}
+
+.checkbox:disabled {
+  cursor: not-allowed;
+}
+
+.tabSelector button {
+  cursor: pointer;
+  @include InputField(20px, 'max-content', 20px);
+  border: none;
+  border-radius: 0;
+  height: 4px;
+  border-right: 1px solid #abb0b8;
+  background: none;
+  padding: 0 0.7rem 1.8rem;
+  color: #6f7378;
+
+  &:hover {
+    color: var(--grays-04);
+  }
+}
+
+.tabSelector button:last-child {
+  border: none;
+}
+
+.tabSelectorSelected {
+  color: var(--grays-01) !important;
+  font-weight: 500;
+}
+
+.md-tab button {
+  font-size: 15px !important;
+  padding: 0 0.7rem 1.4rem !important;
+}
+
+.highlightSelectedValue {
+  font-weight: 500 !important;
+}
+
+.dropDownSelector {
+  @include InputField('fit-content', 'fit-content', 16px);
+  width: fit-content;
+  color: black;
+  font-weight: 700;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.disabledOption {
+  color: #9ca0a3;
+  pointer-events: none;
+}
+
+.dropDownSelector:focus {
+  cursor: pointer;
+  border-color: none;
+  border: 1.5px solid var(--grays-01);
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  outline: none;
+  text-transform: uppercase;
+}
+
+.textSelector {
+  display: flex;
+  flex-direction: column;
+}
+
+.textSelector input {
+  @include InputField('fit-content', 'fit-content', 16px, var(--grays-01), 1px);
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.7rem;
+  color: transparent;
+  text-shadow: 0 0 0 #2a2a2a;
+}
+
+.textSelectorSelected {
+  background-color: rgba(153, 187, 255, 0.2) !important;
+  border: none;
+  border: 2.5px solid var(--grays-01) !important;
+  outline: none;
+}
+
+.error {
+  border-color: red !important;
+}

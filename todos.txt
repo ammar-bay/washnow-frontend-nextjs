@@ -1,0 +1,2 @@
+selectCar edit remove add
+detailer Details show

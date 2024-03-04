@@ -1,0 +1,118 @@
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    // justify-content: center;
+    padding: 0 5%;
+  }
+
+  .backBtn {
+    color: black;
+    padding: 10px 30px;
+  }
+
+  .selectCarHeading {
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: calc(100vw - 300px - 500px);
+    margin-left: 10px;
+
+    h1 {
+      color: var(--grays-05);
+      font-family: "Inter", Helvetica;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.41px;
+      line-height: 40px;
+      position: relative;
+      white-space: nowrap;
+      width: fit-content;
+      align-items: center;
+    }
+
+    .addCarBtn {
+      color: black;
+    }
+  }
+
+  .mid {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px 20px;
+    width: auto;
+
+    .card {
+      background-color: #f9f9f9;
+      border-radius: 16px;
+      height: 160px;
+      overflow: hidden;
+      position: relative;
+      width: 335px;
+      display: flex;
+      margin: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .text-wrapper-4 {
+      color: #666666;
+      font-family: var(--body-bold-font-family);
+      font-size: var(--body-bold-font-size);
+      font-style: var(--body-bold-font-style);
+      font-weight: var(--body-bold-font-weight);
+      letter-spacing: var(--body-bold-letter-spacing);
+      line-height: var(--body-bold-line-height);
+      // margin-top: -1px;
+      position: relative;
+      white-space: nowrap;
+      width: fit-content;
+    }
+
+    p {
+      color: #666666;
+      font-family: var(--body-regular-font-family);
+      font-size: var(--body-regular-font-size);
+      font-style: var(--body-regular-font-style);
+      font-weight: var(--body-regular-font-weight);
+      letter-spacing: var(--body-regular-letter-spacing);
+      line-height: var(--body-regular-line-height);
+      position: relative;
+      white-space: nowrap;
+      width: fit-content;
+      margin: 0;
+    }
+  }
+
+  .bottom {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    .addCarBtn {
+      color: black;
+      padding: auto 20px;
+    }
+  }
+}

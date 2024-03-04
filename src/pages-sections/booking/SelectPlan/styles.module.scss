@@ -1,0 +1,85 @@
+.container {
+  width: calc(100vw - 300px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 5%;
+
+    .backBtn {
+      color: black;
+      padding: 10px 30px;
+    }
+
+    h1 {
+      color: #2e2e2e;
+      font-family: "Inter", Helvetica;
+      font-size: 32px;
+      font-weight: 700;
+
+      letter-spacing: -0.41px;
+      line-height: 40px;
+    }
+
+    .mid {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+
+      .cardContainer {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+
+        .text {
+          color: #666666;
+          font-family: var(--body-bold-font-family);
+          font-size: var(--body-bold-font-size);
+          font-style: var(--body-bold-font-style);
+          font-weight: var(--body-bold-font-weight);
+          letter-spacing: var(--body-bold-letter-spacing);
+          line-height: var(--body-bold-line-height);
+        }
+
+        .textBlue {
+          color: #008bcc;
+          font-family: var(--body-bold-font-family);
+          font-size: var(--body-bold-font-size);
+          font-style: var(--body-bold-font-style);
+          font-weight: var(--body-bold-font-weight);
+          letter-spacing: var(--body-bold-letter-spacing);
+          line-height: var(--body-bold-line-height);
+        }
+
+        .cardWrapper {
+          align-items: center;
+          display: flex;
+          flex: 0 0 auto;
+          flex-wrap: wrap;
+          gap: 16px 16px;
+          position: relative;
+        }
+      }
+    }
+    .bottom {
+      padding-top: 5%;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .nextBtn {
+        padding: 10px 30px;
+      }
+    }
+  }
+}

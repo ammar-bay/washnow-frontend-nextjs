@@ -1,0 +1,100 @@
+.container {
+  align-items: flex-start;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  position: relative;
+  width: 335px;
+
+  .title {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+
+    .text {
+      color: #2e2e2e;
+      font-family: var(--body-bold-font-family);
+      font-size: var(--body-bold-font-size);
+      font-style: var(--body-bold-font-style);
+      font-weight: var(--body-bold-font-weight);
+      letter-spacing: var(--body-bold-letter-spacing);
+      line-height: var(--body-bold-line-height);
+      margin-top: -1px;
+      position: relative;
+
+      width: fit-content;
+    }
+  }
+
+  .time {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    position: relative;
+
+    .timeIcon {
+      height: 16px;
+      position: relative;
+      width: 16px;
+      color: var(--blue-06);
+    }
+
+    .text {
+      color: #666666;
+      font-family: var(--body-regular-font-family);
+      font-size: var(--body-regular-font-size);
+      font-style: var(--body-regular-font-style);
+      font-weight: var(--body-regular-font-weight);
+      letter-spacing: var(--body-regular-letter-spacing);
+      line-height: var(--body-regular-line-height);
+      position: relative;
+      text-align: center;
+      width: fit-content;
+    }
+  }
+
+  .details {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 6px;
+    position: relative;
+
+    .checkIcon {
+      width: 20px;
+      height: 20px;
+      color: var(--blue-06);
+    }
+    .text {
+      color: #666666;
+      font-family: var(--body-regular-font-family);
+      font-size: var(--body-regular-font-size);
+      font-style: var(--body-regular-font-style);
+      font-weight: var(--body-regular-font-weight);
+      letter-spacing: var(--body-regular-letter-spacing);
+      line-height: var(--body-regular-line-height);
+      position: relative;
+      text-align: center;
+      white-space: nowrap;
+      width: fit-content;
+    }
+  }
+  .addOnText {
+    color: #666666;
+    font-family: "Inter", Helvetica;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.41px;
+    line-height: 24px;
+    position: relative;
+    width: 248px;
+  }
+}

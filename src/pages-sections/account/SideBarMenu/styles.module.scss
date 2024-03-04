@@ -1,0 +1,86 @@
+.top {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.userImgContainer {
+  position: relative;
+
+  .userImg {
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 71px;
+    position: relative;
+    width: 71px;
+  }
+
+  .cameraImg {
+    height: 24px;
+    left: 47px;
+    position: absolute;
+    top: 47px;
+    width: 24px;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .optionContainer {
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 12px;
+    padding: 10px 16px 10px 0px;
+    position: relative;
+    cursor: pointer;
+
+    .optionWrapper {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      flex-grow: 1;
+      gap: 12px;
+      position: relative;
+
+      .activeIcon{
+        color: #4fbae9
+      }
+
+      .optionIcon {
+        // height: 24px;
+        // position: relative;
+        // width: 24px;
+      }
+
+      .textActive {
+        color: var(--blue-06);
+        flex: 1;
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 20px;
+        position: relative;
+      }
+
+      .text {
+        color: var(--grays-05);
+        flex: 1;
+        font-family: "Inter", Helvetica;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 20px;
+        position: relative;
+      }
+    }
+  }
+}

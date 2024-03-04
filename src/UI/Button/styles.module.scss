@@ -1,0 +1,256 @@
+@import '@styles/variable.scss';
+
+$disabled-text-color: #bdbdbd;
+
+@mixin buttonBase() {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content;
+  color: white;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: capitalize;
+  border-radius: 16px;
+  cursor: pointer;
+  outline: none;
+  user-select: none;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@mixin buttonStyling($background_color: $background-color, $colour: $primary-color, $border) {
+  background-color: $background_color;
+  color: $colour;
+  border: $border;
+}
+
+.button {
+  @include buttonBase();
+}
+
+.text {
+  @include buttonStyling($background-color, $primary-color, none);
+  font-weight: 400;
+  padding: 6px 8px;
+  background: transparent;
+
+  &:hover {
+    background-color: #f8f8fc;
+    border: none;
+    outline: none;
+  }
+
+  &.error-bg {
+    @include buttonStyling($background-color, $error-color, none);
+
+    &:hover {
+      background-color: rgba($error-color, 0.045);
+    }
+  }
+
+  &.info-bg {
+    @include buttonStyling($background-color, $info-color, none);
+
+    &:hover {
+      background-color: rgba($info-color, 0.045);
+    }
+  }
+
+  &.secondary-bg {
+    @include buttonStyling($background-color, $secondary-color, none);
+
+    &:hover {
+      background-color: rgba($secondary-color, 0.045);
+    }
+  }
+
+  &.success-bg {
+    @include buttonStyling($background-color, $success-color, none);
+
+    &:hover {
+      background-color: rgba($success-color, 0.045);
+    }
+  }
+
+  &:disabled {
+    @include buttonStyling($background-color, $disabled-text-color, none);
+
+    &:hover {
+      background-color: rgba($disabled-text-color, 0.045);
+    }
+
+    cursor: default;
+    transition: none;
+  }
+}
+
+.contained {
+  border: none;
+  padding: 6px 16px;
+  background-color: $primary-color;
+  box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  color: white;
+
+  &:hover {
+    background-color: rgba($primary-color, 0.8);
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    border: none;
+  }
+
+  &:disabled {
+    box-shadow: 0px 3px 1px -2px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 1px 5px 0px rgb(0 0 0 / 12%);
+  }
+
+  &.error-bg {
+    background-color: $error-color;
+
+    &:hover {
+      background-color: rgba($error-color, 0.8);
+    }
+  }
+
+  &.info-bg {
+    background-color: $info-color;
+
+    &:hover {
+      background-color: rgba($info-color, 0.8);
+    }
+  }
+
+  &.secondary-bg {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: rgba($secondary-color, 0.8);
+    }
+  }
+
+  &.success-bg {
+    background-color: $success-color;
+
+    &:hover {
+      background-color: rgba($success-color, 0.8);
+    }
+  }
+
+  &:disabled {
+    @include buttonStyling(#d9d9d9, $disabled-text-color, 0px solid #d9d9d9);
+
+    &:hover {
+      @include buttonStyling(#d9d9d9, $disabled-text-color, 0px solid #d9d9d9);
+    }
+
+    cursor: default;
+    transition: none;
+  }
+}
+
+.outlined {
+  padding: 5px 15px;
+  background: transparent;
+  @include buttonStyling($background-color, $primary-color, 2px solid $primary-color);
+
+  &:hover {
+    transition: 0.05s;
+    background-color: rgba($primary-color, 0.09);
+  }
+
+  &.success-bg {
+    @include buttonStyling($background-color, $success-color, 2px solid $success-color);
+
+    &:hover {
+      background-color: rgba($success-color, 0.09);
+    }
+  }
+
+  &.info-bg {
+    @include buttonStyling($background-color, $info-color, 2px solid $info-color);
+
+    &:hover {
+      background-color: rgba($info-color, 0.09);
+    }
+  }
+
+  &.secondary-bg {
+    @include buttonStyling($background-color, $secondary-color, 2px solid $secondary-color);
+
+    &:hover {
+      background-color: rgba($secondary-color, 0.09);
+    }
+  }
+
+  &.error-bg {
+    @include buttonStyling($background-color, $error-color, 2px solid $error-color);
+
+    &:hover {
+      background-color: rgba($error-color, 0.09);
+    }
+  }
+
+  &:disabled {
+    @include buttonStyling($background-color, $disabled-text-color, 2px solid $disabled-text-color);
+
+    &:hover {
+      background-color: rgba($background-color, 0.09);
+    }
+
+    cursor: default;
+    transition: none;
+  }
+}
+
+.icon {
+  @include buttonStyling(transparent, $primary-color, none);
+  background: transparent !important;
+
+  &:hover {
+    border: none;
+  }
+
+  &.error-bg {
+    @include buttonStyling(transparent, $error-color, none);
+  }
+
+  &.info-bg {
+    @include buttonStyling(transparent, $info-color, none);
+  }
+
+  &.secondary-bg {
+    @include buttonStyling(transparent, $secondary-color, none);
+  }
+
+  &.success-bg {
+    @include buttonStyling(transparent, $success-color, none);
+  }
+
+  &:disabled {
+    @include buttonStyling(transparent, $disabled-text-color, none);
+    cursor: default;
+    transition: none;
+  }
+}
+
+@mixin icon {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.startIcon {
+  @include icon;
+  margin-right: 10px;
+  margin-left: -5px;
+}
+
+.endIcon {
+  @include icon;
+  margin-left: 5px;
+  margin-right: -5px;
+}

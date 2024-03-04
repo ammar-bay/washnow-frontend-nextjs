@@ -1,0 +1,103 @@
+.container {
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5%;
+  position: relative;
+  // width: 100;
+
+  .wrapper {
+    align-items: center;
+    align-self: stretch;
+    background-color: #f6f8f9;
+    border-radius: 32px;
+    display: flex;
+    flex: 0 0 auto;
+    gap: 40px;
+    justify-content: center;
+    padding: 80px;
+    position: relative;
+    // width: 100%;
+
+    .left {}
+
+    .right {
+      align-items: center;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: 40px;
+      position: relative;
+
+      .inputContainer {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        width: 100%;
+      }
+
+      .row {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex: 0 0 auto;
+        gap: 10%;
+        position: relative;
+        width: 100%;
+
+        .column {
+          align-items: flex-start;
+          align-self: stretch;
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          gap: 10px;
+          position: relative;
+          width: 100%;
+
+          .text {
+            align-self: stretch;
+            color: var(--grays-05);
+            font-family: "Inter", Helvetica;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: -0.32px;
+            line-height: 16px;
+            margin-top: -1px;
+            position: relative;
+            white-space: nowrap;
+          }
+
+          .textInput {
+            height: 28px;
+            width: calc(100% - 16px);
+          }
+
+          .messageTextInput {
+            height: 100px;
+            width: calc(100% - 16px);
+          }
+        }
+      }
+
+      .btn {
+        color: var(--grays-white, #FFF);
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        padding: 10px 20px;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,59 @@
+@import '@styles/variable.scss';
+
+@mixin divider($color: rgba(0, 0, 0, 0.12)) {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  &:before,
+  &:after {
+    content: '';
+    flex-grow: 1;
+    border-width: 0;
+    border-style: solid;
+    border-color: $color;
+    border-bottom-width: 1px;
+  }
+  &:not(:empty) {
+    &:before {
+      margin-right: 0.7rem;
+    }
+    &:after {
+      margin-left: 0.7rem;
+    }
+  }
+}
+
+.default {
+  @include divider();
+}
+
+.primary {
+  @include divider($primary-color);
+}
+
+.secondary {
+  @include divider($secondary-color);
+}
+
+.info {
+  @include divider($info-color);
+}
+
+.warning {
+  @include divider($warning-color);
+}
+
+.error {
+  @include divider($error-color);
+}
+
+.success {
+  @include divider($success-color);
+}
+
+.dashed {
+  &:before,
+  &:after {
+    border-style: dashed;
+  }
+}

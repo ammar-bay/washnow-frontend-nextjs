@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  .wrapper {
+    align-items: center;
+    border: 1px none;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 100px;
+
+    position: relative;
+    width: 100%;
+    .logo {
+      height: 40px;
+      position: relative;
+      width: 239px;
+    }
+
+    .wrapperContainer {
+      align-items: center;
+      display: inline-flex;
+      flex: 0 0 auto;
+      flex-direction: column;
+      gap: 100px;
+      position: relative;
+
+      .top {
+        align-items: flex-start;
+        display: flex;
+        flex: 0 0 auto;
+        flex-direction: column;
+        gap: 40px;
+        position: relative;
+        width: 335px;
+
+        .welcomeBackContainer {
+          align-items: flex-start;
+          align-self: stretch;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: column;
+          gap: 12px;
+          position: relative;
+          width: 100%;
+
+          .textHeading {
+            align-self: stretch;
+            color: var(--grays-05);
+            font-family: "Poppins", Helvetica;
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            line-height: 32px;
+            margin-top: -1px;
+            position: relative;
+            text-align: center;
+          }
+        }
+        .text {
+          align-self: stretch;
+          color: var(--grays-04);
+          font-family: "Poppins", Helvetica;
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: -0.41px;
+          line-height: 20px;
+          position: relative;
+          text-align: center;
+        }
+
+        .inputContainer {
+          align-items: flex-start;
+          align-self: stretch;
+          display: flex;
+          flex: 0 0 auto;
+          flex-direction: column;
+          gap: 20px;
+          position: relative;
+          width: 100%;
+
+          .inputWrapper {
+            // align-self: stretch !important;
+            // border-color: var(--grays-02) !important;
+            // flex: 0 0 auto !important;
+            display: flex;
+            width: 100%;
+
+            .inputClass {
+            }
+          }
+          .signinBtn {
+            width: 100% !important;
+          }
+        }
+      }
+
+      .bottom {
+        align-items: flex-start;
+        display: inline-flex;
+        flex: 0 0 auto;
+        gap: 8px;
+        position: relative;
+
+        .text {
+          color: var(--grays-04);
+          font-family: "Inter", Helvetica;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: -0.08px;
+          line-height: 16px;
+          margin-top: -1px;
+          position: relative;
+          text-align: center;
+          white-space: nowrap;
+          width: fit-content;
+        }
+
+        .textBlue {
+          color: var(--blue-06);
+          font-family: "Inter", Helvetica;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: -0.08px;
+          line-height: 16px;
+          margin-top: -1px;
+          position: relative;
+          white-space: nowrap;
+          width: fit-content;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
